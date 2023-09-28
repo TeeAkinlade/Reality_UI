@@ -5,7 +5,7 @@ import footerLogo from "../image/footerLogo.svg";
 const Footer = () => {
   return (
     <div className='max-w-7xl m-auto'>
-        <div className=" bg-transparent mt-8 lg:mt-10 px-2">
+        <div className=" bg-transparent mt-8 lg:mt-10 px-4">
             <footer className="mt-[5rem] container lg:mb-[1rem]">
                 <div className="text-white rounded-[30px] p-[1rem] lg:p-[2rem] bg-[#2c2c2c]" style={{translate: 'none', rotate: "none", scale: "none", transform:"translate(0px, -50px)"}}>
                     <div className="grid grid-cols-1 lg:grid-cols-7 gap-[1rem]">

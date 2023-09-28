@@ -15,7 +15,7 @@ const SubFooter = () => {
                     At Realty, we are committed to providing exceptional service to all of our clients. Whether you 're looking to buy, sell, or invest in real estate, our team of expert agents is here to help. Contact us today to discuss your real estate goals and find out how we can assist you every step of the way.
                     </p>
                     <div className="flex start justify-start my-10">
-                        <Link to="/"
+                        <Link to="/contact"
                         className=' bg-black text-white  px-5 py-3 rounded-full cursor-pointer text-base hover:bg-[tomato] duration-300 ease-in'
                         >
                             Contact Us

@@ -1,16 +1,23 @@
 import React, { useState } from 'react'
 import logo from "../image/logo.svg"
-import { Link } from 'react-router-dom'
+import { Link, useLocation } from 'react-router-dom'
 import { RxHamburgerMenu } from 'react-icons/rx'
 import { RxCross1 } from 'react-icons/rx'
-import star from '../image/star.svg'
 
 const Nav = () => {
     const [isNavOpen, setIsNavOpen] = useState(false);
+    const location = useLocation();
+    console.log(location.pathname)
+
+    const pathMatchRoute = (route) => {
+        if (route === location.pathname) {
+            return true
+        }
+    }
 
   return (
     <div className='max-w-7xl m-auto'>
-        <div className="bg-transparent py-4 px-2">
+        <div className="bg-transparent py-4 px-4">
             <div className="flex items-center justify-between">
                 <Link to="/">
                     <img src={logo} alt="logo" className='cursor-pointer' />
@@ -24,16 +31,16 @@ const Nav = () => {
                             </div>
                                 <ul className="flex flex-col items-center justify-between min-h-[150px] pb-">
                                     <Link to="/services">
-                                        <li className="cursor-pointer text-md mx-5 font-normal text-gray-700 ease-in duration-300 hover:opacity-80 hover:text-[tomato] inline-block">Services</li>
+                                        <li className={`cursor-pointer text-md mx-5 font-normal text-gray-700 ease-in duration-300 hover:opacity-80 hover:text-[tomato] inline-block ${pathMatchRoute('/services') && "text-red-500 border-b-[3px] border-white"}`}>Services</li>
                                     </Link>
                                     <Link to="/about">
-                                        <li className="cursor-pointer text-md font-normal mx-5 text-gray-700 ease-in duration-300 hover:opacity-80 hover:text-[tomato] inline-block">About</li>
+                                        <li className={`cursor-pointer text-md font-normal mx-5 text-gray-700 ease-in duration-300 hover:opacity-80 hover:text-[tomato] inline-block ${pathMatchRoute('/about') && "text-red-500 border-b-[3px] border-white"}`}>About</li>
                                     </Link>
                                     <Link to="/properties" >
-                                        <li className="cursor-pointer text-md font-normal mx-5 text-gray-700 ease-in duration-300 hover:opacity-80 hover:text-[tomato] inline-block">Properties</li>
+                                        <li className={`cursor-pointer text-md font-normal mx-5 text-gray-700 ease-in duration-300 hover:opacity-80 hover:text-[tomato] inline-block ${pathMatchRoute('/properties') && "text-red-500 border-b-[3px] border-white"}`}>Properties</li>
                                     </Link>
                                     <Link to="/blog" >
-                                        <li className="cursor-pointer text-md font-normal mx-5 text-gray-700 ease-in duration-300 hover:opacity-80 hover:text-[tomato] inline-block">Blog</li>
+                                        <li className={`cursor-pointer text-md font-normal mx-5 text-gray-700 ease-in duration-300 hover:opacity-80 hover:text-[tomato] inline-block ${pathMatchRoute('/blog') && "text-red-500 border-b-[3px] border-white"}`}>Blog</li>
                                     </Link>
                                 </ul>
                         </div>

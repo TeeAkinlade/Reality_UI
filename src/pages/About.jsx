@@ -19,7 +19,7 @@ import { FiInstagram } from 'react-icons/fi'
 const About = () => {
   return (
     <div className='m-auto max-w-7xl'>
-        <div className="px-2 py-16">
+        <div className="px-4 py-16">
             <div className="text-center w-[50%] m-auto">
                 <h1 className="text-2xl lg:text-6xl text-[#131313]">
                 The Perfect Partner for Your Real Estate Needs
