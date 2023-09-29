@@ -21,14 +21,14 @@ const Hero = () => {
   return (
     <div className='max-w-7xl m-auto'>
         <div className="px-2 pt-10 mb-16">
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-[0.5rem]">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-[0.5rem]">
                 <h1 className='text-5xl text-white font-medium'>Discover Your Ideal Living Space</h1>
                 <p className="text-lg"> Space Explore our latest collection of premium properties and find your dream home today. From luxurious estates to trendy urban condos, we have something for every lifestyle and budget.</p>
             </div>
             <div className="mt-[1rem] lg:mt-10 grid grid-cols-1 lg:grid-cols-6 gap-[1rem]">
-                <div className="block relative col-span-6 lg:col-span-3 h-[250px] lg:h-[600px] rounded-[30px]">
+                <div className="block relative col-span-6 lg:col-span-3 w-full h-[400px] lg:h-[600px] rounded-[30px]">
                     <img src={pic1}
-                        className='object-cover rounded-[30px] h-full'
+                        className='object-cover rounded-[30px] h-full w-full'
                     />
                     <div className=" flex flex-col justify-between absolute p-8 top-0 left-0 bottom-0 right-0 gap-1">
                         <div className='flex items-center'>
@@ -36,7 +36,7 @@ const Hero = () => {
                             <p className="text-[#444444]">New Property</p></span>
                         </div>
                         <div className="flex justify-between items-center">
-                            <div className="text-white backdrop-blur-lg p-1.5 rounded-lg">
+                            <div className="text-[#4b2109] backdrop-blur-lg p-1.5 rounded-lg">
                                 <p className='text-4xl font-bold'>FlowLive Estate</p>
                                 <p className='text-lg uppercase mt-2'>4th Avenue, GW</p>
                             </div>
@@ -78,9 +78,9 @@ const Hero = () => {
                             </SwiperSlide>
                         </Swiper>
                     </div>
-                    <div className="row-span-3 rounded-[30px] grid grid-cols-1 lg:grid-cols-6 gap-[1rem] h-[300px] ">
-                        <div className="relative col-span-6 lg:col-span-3 rounded-[30px] h-[300px] lg:h-full cursor-pointer z-50">
-                            <div className="absolute p-2 backdrop-blur-xl rounded-[50%] bottom-32 right-32 outline-none ring-0">
+                    <div className="row-span-3 rounded-[30px] grid grid-cols-1 md:grid-cols-6 gap-[1rem] h-[300px] ">
+                        <div className="relative col-span-6 md:col-span-3 rounded-[30px] h-[300px] md:h-full w-full cursor-pointer z-50">
+                            <div className="absolute p-2 backdrop-blur-xl rounded-[50%] bottom-32 lg:right-32 md:right-36 outline-none ring-0">
                                 <BsFillPlayFill
                                     onClick={() => setOpen(true)}
                                     className='text-white text-3xl border-0'
@@ -95,11 +95,11 @@ const Hero = () => {
                                             onClose={() => setOpen(false)}
                                         />
                                         <button onClick={() => setOpen(true)}>
-                                            <img src={pic2} alt="" className="object-cover rounded-[30px] h-[284px]" />
+                                            <img src={pic2} alt="" className="object-cover rounded-[30px] h-[284px] w-full" />
                                         </button>
                             </React.Fragment>
                         </div>
-                        <div className="col-span-6 lg:col-span-3 rounded-[30px] h-[300px] lg:h-full relative overflow-hidden cursor-pointer">
+                        <div className="col-span-6 md:col-span-3 rounded-[30px] h-[300px] md:h-full overflow-hidden cursor-pointer">
                             <div className="relative rounded-[30px] h-[284px] bg-[#bdbcbc] px-8 py-10 text-[#202020]">
                                 <h1 className="text-3xl">
                                     140+

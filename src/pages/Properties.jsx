@@ -15,10 +15,11 @@ const Properties = () => {
   return (
     <div className='m-auto max-w-7xl'>
         <div className="py-16 px-4">
-            <h1 className="text-6xl text-center mb-12">Our Properties</h1>
-            <p className="text-xl m-auto max-w-2xl text-center">Welcome to our properties page, where you can explore a wide range of stunning homes, from cozy apartments to luxurious estates.</p>
+            <h1 className="text-3xl font-semibold lg:font-medium lg:text-6xl text-center mb-8 lg:mb-12">Our Properties</h1>
+            <p className="lg:text-xl m-auto max-w-2xl text-center">Welcome to our properties page, where you can explore a wide range of stunning homes, from cozy apartments to luxurious estates.</p>
+                <button className="w-full bg-transparent border border-white text center p-3 rounded-full mt-10 lg:hidden">Filter</button>
             <div className="grid grid-cols-1 lg:grid-cols-8 mt-10 gap-[2rem]">
-                <div className="lg:col-span-2 lg:static fixed top-0 bottom-0 bg-white lg:bg-transparent">
+                <div className="lg:col-span-2 lg:static fixed top-0 bottom-0 bg-white lg:bg-transparent opacity-0 lg:opacity-100">
                     <div className="flex justify-between">
                         <p className="text-white text-xl font-semibold">Filters</p>
                         <p className="text-white text-xl font-normal">All Properties</p>
@@ -41,7 +42,9 @@ const Properties = () => {
                     </div>
                 </div>
                 <div className="lg:col-span-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[1rem] mb-12">
-                    <Link to="" >
+                    <Link to=""
+                        className='mb-6'
+                    >
                         <div className="rounded-[30px] h-[300px] relative">
                             <img src={property1} alt="property" className='object-cover rounded-[30px]' />
                             <AiOutlinePlus 
@@ -70,7 +73,9 @@ const Properties = () => {
                         </div>
                         <p className="mt-4 text-[#333] text-lg font-semibold">Luxury Condo</p>
                     </Link>
-                    <Link to="" >
+                    <Link to="" 
+                        className='mb-6'
+                    >
                         <div className="rounded-[30px] h-[300px] relative">
                             <img src={property2} alt="property" className='object-cover rounded-[30px]' />
                             <AiOutlinePlus 
@@ -99,7 +104,9 @@ const Properties = () => {
                         </div>
                         <p className="mt-4 text-[#333] text-lg font-semibold">Mountain Retreat</p>
                     </Link>
-                    <Link to="" >
+                    <Link to="" 
+                        className='mb-6'
+                    >
                         <div className="rounded-[30px] h-[300px] relative">
                             <img src={property3} alt="property" className='object-cover rounded-[30px]' />
                             <AiOutlinePlus 
@@ -128,7 +135,9 @@ const Properties = () => {
                         </div>
                         <p className="mt-4 text-[#333] text-lg font-semibold">Downtown Penthouse</p>
                     </Link>
-                    <Link to="" >
+                    <Link to="" 
+                        className='mb-6'
+                    >
                         <div className="rounded-[30px] h-[300px] relative">
                             <img src={property4} alt="property" className='object-cover rounded-[30px]' />
                             <AiOutlinePlus 

@@ -16,8 +16,8 @@ import { LuBath } from 'react-icons/lu'
 import { PiArrowSquareUpRightLight } from 'react-icons/pi'
 import { LiaTimesSolid } from 'react-icons/lia'
 import { Link } from 'react-router-dom'
-import Services from '../components/Services'
 import SubFooter from '../components/SubFooter'
+import Services from '../components/services'
 
 const Home = () => {
   return (
@@ -36,7 +36,9 @@ const Home = () => {
 
               </div>
               <div className="lg:col-span-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-[1rem] my-12">
-                <Link to="" >
+                <Link to="" 
+                  className='mb-8'
+                >
                     <div className="rounded-[30px] h-[300px] relative">
                         <img src={property1} alt="property" className='object-cover rounded-[30px]' />
                         <AiOutlinePlus 
@@ -65,7 +67,9 @@ const Home = () => {
                         </div>
                         <p className="mt-4 text-[#333] text-lg font-semibold">Luxury Condo</p>
                     </Link>
-                    <Link to="" >
+                    <Link to="" 
+                      className='mb-8'
+                    >
                         <div className="rounded-[30px] h-[300px] relative">
                             <img src={property2} alt="property" className='object-cover rounded-[30px]' />
                             <AiOutlinePlus 
@@ -94,7 +98,9 @@ const Home = () => {
                         </div>
                         <p className="mt-4 text-[#333] text-lg font-semibold">Mountain Retreat</p>
                     </Link>
-                    <Link to="" >
+                    <Link to="" 
+                      className='mb-8'
+                    >
                         <div className="rounded-[30px] h-[300px] relative">
                             <img src={property3} alt="property" className='object-cover rounded-[30px]' />
                             <AiOutlinePlus 
@@ -123,7 +129,9 @@ const Home = () => {
                         </div>
                         <p className="mt-4 text-[#333] text-lg font-semibold">Downtown Penthouse</p>
                     </Link>
-                    <Link to="" >
+                    <Link to="" 
+                      className='mb-8'
+                    >
                         <div className="rounded-[30px] h-[300px] relative">
                             <img src={property4} alt="property" className='object-cover rounded-[30px]' />
                             <AiOutlinePlus 

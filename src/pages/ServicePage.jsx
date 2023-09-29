@@ -6,7 +6,7 @@ const ServicePage = () => {
   return (
     <div className="max-w-7xl m-auto">
         <div className="bg-transparent py-16 px-2">
-            <section className="container">
+            <section className="w-full">
                 <Services />
                 <SubFooter />
             </section>

@@ -17,7 +17,7 @@ const Nav = () => {
 
   return (
     <div className='max-w-7xl m-auto'>
-        <div className="bg-transparent py-4 px-4">
+        <div className={`bg-transparent py-4 px-4 ${isNavOpen && 'bg-white'}`}>
             <div className="flex items-center justify-between">
                 <Link to="/">
                     <img src={logo} alt="logo" className='cursor-pointer' />
@@ -31,33 +31,33 @@ const Nav = () => {
                             </div>
                                 <ul className="flex flex-col items-center justify-between min-h-[150px] pb-">
                                     <Link to="/services">
-                                        <li className={`cursor-pointer text-md mx-5 font-normal text-gray-700 ease-in duration-300 hover:opacity-80 hover:text-[tomato] inline-block ${pathMatchRoute('/services') && "text-red-500 border-b-[3px] border-white"}`}>Services</li>
+                                        <li className={`cursor-pointer text-md mx-5 font-normal text-gray-700 ease-in duration-300 hover:opacity-80 hover:text-[tomato] inline-block ${pathMatchRoute('/services') && "text-red-500 border-b-[1px] border-[#313131]"}`}>Services</li>
                                     </Link>
                                     <Link to="/about">
-                                        <li className={`cursor-pointer text-md font-normal mx-5 text-gray-700 ease-in duration-300 hover:opacity-80 hover:text-[tomato] inline-block ${pathMatchRoute('/about') && "text-red-500 border-b-[3px] border-white"}`}>About</li>
+                                        <li className={`cursor-pointer text-md font-normal mx-5 text-gray-700 ease-in duration-300 hover:opacity-80 hover:text-[tomato] inline-block ${pathMatchRoute('/about') && "text-red-500 border-b-[1px] border-[#313131]"}`}>About</li>
                                     </Link>
                                     <Link to="/properties" >
-                                        <li className={`cursor-pointer text-md font-normal mx-5 text-gray-700 ease-in duration-300 hover:opacity-80 hover:text-[tomato] inline-block ${pathMatchRoute('/properties') && "text-red-500 border-b-[3px] border-white"}`}>Properties</li>
+                                        <li className={`cursor-pointer text-md font-normal mx-5 text-gray-700 ease-in duration-300 hover:opacity-80 hover:text-[tomato] inline-block ${pathMatchRoute('/properties') && "text-red-500 border-b-[1px] border-[#313131]"}`}>Properties</li>
                                     </Link>
                                     <Link to="/blog" >
-                                        <li className={`cursor-pointer text-md font-normal mx-5 text-gray-700 ease-in duration-300 hover:opacity-80 hover:text-[tomato] inline-block ${pathMatchRoute('/blog') && "text-red-500 border-b-[3px] border-white"}`}>Blog</li>
+                                        <li className={`cursor-pointer text-md font-normal mx-5 text-gray-700 ease-in duration-300 hover:opacity-80 hover:text-[tomato] inline-block ${pathMatchRoute('/blog') && "text-red-500 border-b-[1px] border-[#313131]"}`}>Blog</li>
                                     </Link>
                                 </ul>
                         </div>
                     </section>
 
                     <ul className="hidden space-x-8 lg:flex">
-                        <Link to='/services'>
-                            <li className="cursor-pointer text-md mx-5 font-normal text-black ease-in duration-300 hover:opacity-80 hover:text-[tomato] inline-block">Services</li>
+                        <Link to="/services">
+                            <li className={`cursor-pointer text-md mx-5 font-normal text-gray-700 ease-in duration-300 hover:opacity-80 hover:text-[tomato] inline-block ${pathMatchRoute('/services') && "text-red-500 border-b-[1px] border- border-white"}`}>Services</li>
                         </Link>
-                        <Link to='/about'>
-                            <li className="cursor-pointer text-md font-normal mx-5 text-black ease-in duration-300 hover:opacity-80 hover:text-[tomato] inline-block">About</li>
+                        <Link to="/about">
+                            <li className={`cursor-pointer text-md font-normal mx-5 text-gray-700 ease-in duration-300 hover:opacity-80 hover:text-[tomato] inline-block ${pathMatchRoute('/about') && "text-red-500 border-b-[1px] border-white"}`}>About</li>
                         </Link>
-                        <Link to='/properties'>
-                            <li className="cursor-pointer text-md font-normal mx-5 text-black ease-in duration-300 hover:opacity-80 hover:text-[tomato] inline-block">Properties</li>
-                            </Link>
-                        <Link to='/blog'>
-                            <li className="cursor-pointer text-md font-normal mx-5 text-black ease-in duration-300 hover:opacity-80 hover:text-[tomato] inline-block">Blog</li>
+                        <Link to="/properties" >
+                            <li className={`cursor-pointer text-md font-normal mx-5 text-gray-700 ease-in duration-300 hover:opacity-80 hover:text-[tomato] inline-block ${pathMatchRoute('/properties') && "text-red-500 border-b-[1px] border-white"}`}>Properties</li>
+                        </Link>
+                        <Link to="/blog" >
+                            <li className={`cursor-pointer text-md font-normal mx-5 text-gray-700 ease-in duration-300 hover:opacity-80 hover:text-[tomato] inline-block ${pathMatchRoute('/blog') && "text-red-500 border-b-[1px] border-white"}`}>Blog</li>
                         </Link>
                     </ul>
                     <div className="flex items-center space-x-2">
@@ -81,25 +81,6 @@ const Nav = () => {
                             }                
                         </div>
                     </div>
-                <style>{`
-                .hideMenuNav {
-                    display: none;
-                }
-                .showMenuNav {
-                    display: block;
-                    position: absolute;
-                    width: 100%;
-                    height: 30%;
-                    top: 60px;
-                    left: 0;
-                    background: white;
-                    z-index: 10;
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: space-evenly;
-                    align-items: center;
-                }
-                `}</style>
             </div>
         </div>   
     </div>

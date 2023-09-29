@@ -7,7 +7,7 @@ const Contact = () => {
   return (
     <div className="max-w-7xl m-auto">
       <div className="bg-transparent py-16 px-4">
-        <section className="container">
+        <section className="">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[1rem] w-full">
             <div className="rounded-[30px] bg-[#e2e2e2] px-10 py-5">
               <div className="flex items-center">
