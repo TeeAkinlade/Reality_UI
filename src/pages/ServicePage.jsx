@@ -1,6 +1,6 @@
 import React from 'react'
-import Services from '../components/services';
 import SubFooter from '../components/SubFooter';
+import Services from '../components/services';
 
 const ServicePage = () => {
   return (
