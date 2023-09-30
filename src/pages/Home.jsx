@@ -17,14 +17,14 @@ import { PiArrowSquareUpRightLight } from 'react-icons/pi'
 import { LiaTimesSolid } from 'react-icons/lia'
 import { Link } from 'react-router-dom'
 import SubFooter from '../components/SubFooter'
-import Services from '../components/services'
+import Service from '../components/Service'
 
 const Home = () => {
   return (
     <div className='max-w-7xl m-auto'>
         <div className="mx-2 my-2 bg-transparent">
             <Hero />
-            <Services />
+            <Service />
             <div className="mx-2">
               <div className="flex justify-between items-center">
                 <h1 className="text-3xl mt-10 font-semibold text-[#202020]">Latest properties</h1>
