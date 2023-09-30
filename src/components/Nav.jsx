@@ -29,17 +29,17 @@ const Nav = () => {
                             onClick={() => setIsNavOpen(false)}
                             >
                             </div>
-                                <ul className="flex flex-col items-center justify-between min-h-[150px] pb-">
-                                    <Link to="/services">
+                                <ul className="flex flex-col items-center justify-between min-h-[150px] pb-4">
+                                    <Link onClick={() => setIsNavOpen(!isNavOpen)} to="/services">
                                         <li className={`cursor-pointer text-md mx-5 font-normal text-gray-700 ease-in duration-300 hover:opacity-80 hover:text-[tomato] inline-block ${pathMatchRoute('/services') && "text-red-500 border-b-[1px] border-[#313131]"}`}>Services</li>
                                     </Link>
-                                    <Link to="/about">
+                                    <Link onClick={() => setIsNavOpen(!isNavOpen)} to="/about">
                                         <li className={`cursor-pointer text-md font-normal mx-5 text-gray-700 ease-in duration-300 hover:opacity-80 hover:text-[tomato] inline-block ${pathMatchRoute('/about') && "text-red-500 border-b-[1px] border-[#313131]"}`}>About</li>
                                     </Link>
-                                    <Link to="/properties" >
+                                    <Link onClick={() => setIsNavOpen(!isNavOpen)} to="/properties" >
                                         <li className={`cursor-pointer text-md font-normal mx-5 text-gray-700 ease-in duration-300 hover:opacity-80 hover:text-[tomato] inline-block ${pathMatchRoute('/properties') && "text-red-500 border-b-[1px] border-[#313131]"}`}>Properties</li>
                                     </Link>
-                                    <Link to="/blog" >
+                                    <Link onClick={() => setIsNavOpen(!isNavOpen)} to="/blog" >
                                         <li className={`cursor-pointer text-md font-normal mx-5 text-gray-700 ease-in duration-300 hover:opacity-80 hover:text-[tomato] inline-block ${pathMatchRoute('/blog') && "text-red-500 border-b-[1px] border-[#313131]"}`}>Blog</li>
                                     </Link>
                                 </ul>

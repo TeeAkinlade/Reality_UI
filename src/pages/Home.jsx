@@ -37,7 +37,7 @@ const Home = () => {
               </div>
               <div className="lg:col-span-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-[1rem] my-12">
                 <Link to="" 
-                  className='mb-8'
+                  className='mb-32 md:mb-8 lg:mb-0'
                 >
                     <div className="rounded-[30px] h-[300px] relative">
                         <img src={property1} alt="property" className='object-cover rounded-[30px]' />
@@ -68,7 +68,7 @@ const Home = () => {
                         <p className="mt-4 text-[#333] text-lg font-semibold">Luxury Condo</p>
                     </Link>
                     <Link to="" 
-                      className='mb-8'
+                      className='mb-32 md:mb-8 lg:mb-0'
                     >
                         <div className="rounded-[30px] h-[300px] relative">
                             <img src={property2} alt="property" className='object-cover rounded-[30px]' />
@@ -99,7 +99,7 @@ const Home = () => {
                         <p className="mt-4 text-[#333] text-lg font-semibold">Mountain Retreat</p>
                     </Link>
                     <Link to="" 
-                      className='mb-8'
+                      className='mb-32 md:mb-0'
                     >
                         <div className="rounded-[30px] h-[300px] relative">
                             <img src={property3} alt="property" className='object-cover rounded-[30px]' />
@@ -130,7 +130,7 @@ const Home = () => {
                         <p className="mt-4 text-[#333] text-lg font-semibold">Downtown Penthouse</p>
                     </Link>
                     <Link to="" 
-                      className='mb-8'
+                      className='mb-20 md:mb-0'
                     >
                         <div className="rounded-[30px] h-[300px] relative">
                             <img src={property4} alt="property" className='object-cover rounded-[30px]' />
@@ -162,11 +162,11 @@ const Home = () => {
                     </Link>
               </div>
             </div>
-            <div className="my-16 mx-2">
+            <div className="my-20 mx-2">
               <div className="flex flex-wrap justify-between relative">
                 <div className="w-full lg:w-1/2 text-white">
-                  <h1 className="text-5xl mt-[3rem] font-medium leading-5">What Our Clients Say</h1>
-                  <p className="text-base mt-12">At Realty, we are committed to providing our clients with the best possible real estate experience. But don 't just take our word for it. Here 's what some of our satisfied clients have to say about working with us.</p>
+                  <h1 className="text-3xl md:text-5xl mt-[3rem] font-medium leading-5">What Our Clients Say</h1>
+                  <p className="text-sm md:text-base mt-12 mb-8">At Realty, we are committed to providing our clients with the best possible real estate experience. But don 't just take our word for it. Here 's what some of our satisfied clients have to say about working with us.</p>
                 </div>
                 <div className="w-full lg:w-1/2">
                   <div className="flex relative">
@@ -174,23 +174,23 @@ const Home = () => {
                       <div className="w-[100px] h-[112px] lg:w-[132px] lg:h-[150px] bg-white rounded-t-[30px] rounded-bl-[30px]">
                          <img src={testimonial1} alt="" className="rounded-[30px] pr-5 pb-5 w-full h-full object-cover" />
                       </div>
-                      <div className="bg-white rounded-l-[1.5rem] w-[65%] min-h-[112px] lg:min-h-[3rem] bottom right-0"></div>
+                      <div className="bg-white rounded-l-[1.5rem] w-[65%] min-h-[60px] lg:min-h-[3rem] bottom right-0"></div>
                     </div>
-                    <div className="bg-white rounded-t-[30px] rounded-br-[30px] w-full px-8 py-6">
+                    <div className="bg-white rounded-t-[30px] rounded-br-[30px] w-full p-4 md:px-8 md:py-6">
                       <p className="font-semibold">John Smith</p>
-                      <p className="text-[#202020] mt-2">"Working with Realty was a pleasure from start to finish. Their team is knowledgeable, professional, and dedicated to helping you find the perfect property. Highly recommend!"</p>
+                      <p className="text-[#202020] mt-2 text-sm md:text-base">"Working with Realty was a pleasure from start to finish. Their team is knowledgeable, professional, and dedicated to helping you find the perfect property. Highly recommend!"</p>
                     </div>
                   </div>
                   <div className="flex relative mt-10">
-                    <div className="bg-white rounded-t-[30px] rounded-bl-[30px] w-full px-8 py-6">
+                    <div className="bg-white rounded-t-[30px] rounded-bl-[30px] w-full p-4 md:px-8 md:py-6">
                       <p className="font-semibold">Jane Doe</p>
-                      <p className="text-[#202020] mt-2">"I couldn't be happier with the service I received from Realty. They made the buying process smooth and stress-free, and I couldn't be happier with my new home. Thank you!"</p>
+                      <p className="text-[#202020] mt-2 text-sm md:text-base">"I couldn't be happier with the service I received from Realty. They made the buying process smooth and stress-free, and I couldn't be happier with my new home. Thank you!"</p>
                     </div>
                     <div className="flex flex-col items-start">
                       <div className="w-[100px] h-[112px] lg:w-[132px] lg:h-[150px] bg-white rounded-t-[30px] rounded-br-[30px]">
                          <img src={testimonial2} alt="" className="rounded-[30px] pl-5 pb-5 w-full h-full object-cover" />
                       </div>
-                      <div className="bg-white rounded-r-[1.5rem] w-[65%] min-h-[112px] lg:min-h-[3rem] bottom-0 left-0"></div>
+                      <div className="bg-white rounded-r-[1.5rem] w-[65%] min-h-[60px] lg:min-h-[3rem] bottom-0 left-0"></div>
                     </div>
                   </div>
                 </div>

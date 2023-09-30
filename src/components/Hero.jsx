@@ -48,7 +48,7 @@ const Hero = () => {
                         </div>
                     </div>
                 </div>
-                <div className="col-span-6 lg:col-span-3 h-[250px] lg:h-[600px] rounded-[30px] gap-[1rem]">
+                <div className="col-span-6 lg:col-span-3 h-full mb-64 md:mb-0 lg:h-[600px] rounded-[30px] gap-[1rem]">
                     <div className="row-span-3 rounded-[30px] w-full overflow-hidden mb-[1rem] h-[300px]">
                     <Swiper
                         spaceBetween={30}
@@ -78,9 +78,9 @@ const Hero = () => {
                             </SwiperSlide>
                         </Swiper>
                     </div>
-                    <div className="row-span-3 rounded-[30px] grid grid-cols-1 md:grid-cols-6 gap-[1rem] h-[300px] ">
+                    <div className="row-span-3 rounded-[30px] grid grid-cols-1 md:grid-cols-6 gap-[1rem] h-[300px]">
                         <div className="relative col-span-6 md:col-span-3 rounded-[30px] h-[300px] md:h-full w-full cursor-pointer z-50">
-                            <div className="absolute p-2 backdrop-blur-xl rounded-[50%] bottom-32 lg:right-32 md:right-36 outline-none ring-0">
+                            <div className="absolute p-2 backdrop-blur-xl rounded-[50%] bottom-32 lg:right-32 right-56 md:right-20 outline-none ring-0">
                                 <BsFillPlayFill
                                     onClick={() => setOpen(true)}
                                     className='text-white text-3xl border-0'
